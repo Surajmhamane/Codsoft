@@ -4,9 +4,9 @@ class NumberGame
 {
 	public static void main(String args[])
 	{
-		System.out.println("Welcome to Guess NumberGame ");
-		System.out.println("You will be asked to guess a Number to win the game ");
-		System.out.println("You have maximum 5 attempt limit");
+		System.out.println("Welcome to NumberGame ");
+		System.out.println("Here You have to guess a Correct  Number to win the game ");
+		System.out.println("You have maximum 3 attempt");
 		Random no=new Random();
 		int k=no.nextInt(100);
 		Scanner sc=new Scanner(System.in);
@@ -14,7 +14,7 @@ class NumberGame
 		int m=5;
 		for(int i=1;i<=5;i++)
 		{
-		  System.out.println("Enter The No: ");
+		  System.out.println("Enter Guess No: ");
 		  int n=sc.nextInt();
 		  
 		  if(n==k)
@@ -25,19 +25,19 @@ class NumberGame
 		  }
 		  else if (n<k)
 		  {
-		  	System.out.println("your guess number is Smaller");
+		  	System.out.println("Your guess number is Smaller");
 		  }
 		  else
 		  {
-		  		System.out.println("your guess number is Greater");
+		  		System.out.println("Your guess number is Greater");
 		  }
 		  m--;
-		  System.out.println("You Have "+m+" Attempts Left..!");
+		  System.out.println("You Have "+m+" Attempts Left.>.!");
 		  
 	  }
 	  if(cnt!=1)
 	  {
-	  		System.out.println("Sorry ! you loss the game");
+	  		System.out.println("Sorry ! You loose the game");
 	  }
 	}
 }
